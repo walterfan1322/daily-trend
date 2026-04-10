@@ -1,0 +1,63 @@
+{
+  "minimax_api_key": "",
+  "telegram_bot_token": "",
+  "telegram_chat_id": "",
+  "moneyprinter_url": "http://YOUR_HOST:7860",
+  "moneyprinter_account_id": "",
+  "data_dir": "C:\\DailyTrend\\data",
+  "schedule_hour": 9,
+  "schedule_minute": 0,
+  "topics": {
+    "kpop": {
+      "enabled": true,
+      "generate_video": true,
+      "display_name": "KPOP 韓流",
+      "feeds": [
+        {
+          "name": "Soompi",
+          "url": "https://www.soompi.com/feed",
+          "lang": "en"
+        },
+        {
+          "name": "Koreaboo",
+          "url": "https://www.koreaboo.com/feed/",
+          "lang": "en"
+        },
+        {
+          "name": "Reddit r/kpop",
+          "url": "https://www.reddit.com/r/kpop/.rss",
+          "lang": "en"
+        },
+        {
+          "name": "Google News KPOP",
+          "url": "https://news.google.com/rss/search?q=kpop+OR+%E9%9F%93%E5%9C%98+OR+%E9%9F%93%E6%B5%81&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+          "lang": "zh"
+        }
+      ],
+      "summary_prompt": "你是一個KPOP新聞整理專家。請將以下新聞整理成一份簡潔的中文每日摘要，包含5-8則最重要的新聞。每則用標題+2-3句摘要。用繁體中文。"
+    },
+    "anime": {
+      "enabled": true,
+      "generate_video": true,
+      "display_name": "日本動漫",
+      "feeds": [
+        {
+          "name": "Anime News Network",
+          "url": "https://www.animenewsnetwork.com/newsroom/rss.xml",
+          "lang": "en"
+        },
+        {
+          "name": "Reddit r/anime",
+          "url": "https://www.reddit.com/r/anime/.rss",
+          "lang": "en"
+        },
+        {
+          "name": "Google News Anime",
+          "url": "https://news.google.com/rss/search?q=anime+%E5%8B%95%E7%95%AB+%E6%97%A5%E6%9C%AC%E5%8B%95%E6%BC%AB&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+          "lang": "zh"
+        }
+      ],
+      "summary_prompt": "你是一個日本動漫新聞整理專家。請將以下新聞整理成一份簡潔的中文每日摘要，包含5-8則最重要的新聞。每則用標題+2-3句摘要。用繁體中文。"
+    }
+  }
+}
